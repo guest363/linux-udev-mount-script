@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEMS=="usb", RUN+="/writable/var/mountScripts/curl.sh '$attr{product}' '$attr{manufacturer}' '$attr{serial}'"
+ACTION=="remove", SUBSYSTEMS=="usb", RUN+="/writable/var/mountScripts/curl-inject.sh '$attr{product}' '$attr{manufacturer}' '$attr{serial}'"

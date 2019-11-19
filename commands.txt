@@ -1,0 +1,7 @@
+# Правила UDEV лежат в каталоге
+/etc/udev/rules.d/
+# Для мониторинга параметров устройств которые ловит UDEV 
+udevadm monitor --environment
+# Для того чтобы UDEV перечитал свои правила
+udevadm control --reload-rules
+
